@@ -16,6 +16,7 @@ $cv_url = '';
 $postData = [];
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = post_data('username');
+    $username = post_data('username');
     $email = post_data('email');
     $password = post_data('password');
     $password_confirm = post_data('password_confirm');

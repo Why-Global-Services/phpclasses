@@ -2,9 +2,9 @@
 
 // 1. Add enctype="multipart/form-data" to form
 // 2. var_dump $_FILES
-//echo '<pre>';
-//var_dump($_FILES);
-//echo '</pre>';
+echo '<pre>';
+var_dump($_FILES);
+echo '</pre>';
 
 // 5. Create $errorMessage variable
 $errorMessage = '';
@@ -12,6 +12,7 @@ $errorMessage = '';
 if (isset($_FILES['file'])) {
     // 7. Get the file extension
     $ext = pathinfo($_FILES['file']['name'], PATHINFO_EXTENSION);
+    echo $ext;
     // 9. Convert $ext into lowercase
     $ext = strtolower($ext);
 
@@ -39,7 +40,7 @@ if (isset($_FILES['file'])) {
 <body>
 <p><?php echo $errorMessage ?></p>
 <form action="" method="post" enctype="multipart/form-data">
-  <input type="file" name="file"><br>
+  <input type="file" accept="" name="file"><br>
   <button>Submit</button>
 </form>
 </body>
