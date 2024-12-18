@@ -18,7 +18,7 @@
 $name = "Sathishkumar Kannan";
 $age = 36;
 $isMale = true; // 3. Change into false
-$height = 175;
+$height = 175.011;
 $salary = null;
 
 // 2. Print the variables. Explain what is concatenation
@@ -36,22 +36,25 @@ echo gettype($height) . '<br>';
 echo gettype($salary) . '<br>';
 
 // 5. Print the whole variable
+echo "var dump output";
 var_dump($name, $age, $isMale, $height, $salary);
 
 // 6. Change the value of the variable
-$name = false;
+///$name = false;
 
 // 7. Print type of the variable
 echo gettype($name) . '<br>';
-
+//$name2 = "test";
 // 8. Variable checking functions
-is_string($name); // false
+echo "is string";
+var_dump(is_string($name)); // false
 is_int($age); // true
 is_bool($isMale); // true
 is_double($height); // true
-
+echo '<br>';echo '<br>';echo '<br>';
 // 9. Check if variable is defined
 var_dump(isset($name));
+echo '<br>';
 var_dump(isset($name2));
 echo '<br>';
 

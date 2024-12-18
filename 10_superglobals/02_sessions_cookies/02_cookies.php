@@ -7,3 +7,4 @@
 // 2. How to set cookies
 setcookie('name', 'TheCodeholic', time() + 60);
 
+$_COOKIE['name'];

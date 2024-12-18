@@ -11,12 +11,12 @@ hello(); // 3
 hello(); // 4
 
 // 5. Create sum of two functions
-// function sum($a, $b, $c)
-// {
-//     echo ($a + $b +$c) . '<br>'; // 5.3. return sum instead of printing
-// }
+function sum($a, $b, $c)
+{
+    echo ($a + $b +$c) . '<br>'; // 5.3. return sum instead of printing
+}
 
-// sum(4,5, 10); // 5.1, 5.4. Add echo
+ sum(4,5, 10); // 5.1, 5.4. Add echo
 // sum(9,10, 15); // 5.2, 5.6. Add echo
 
 //6. Create function to sum all numbers using ...$nums
@@ -29,10 +29,10 @@ hello(); // 4
 // echo sum(1, 2, 3, 4, 6);
 //
 //// 7 Arrow functions
-// function sum(...$nums)
-// {
-//    return array_reduce($nums, fn($coll, $n) => $coll + $n);
-// }
-// echo sum(1, 2, 3, 4, 6);
+function sum1(...$nums)
+{
+   return array_reduce($nums, fn($coll, $n) => $coll + $n);
+}
+echo sum1(1, 2, 3, 4, 6);
 
 

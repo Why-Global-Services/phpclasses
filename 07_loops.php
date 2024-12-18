@@ -1,9 +1,9 @@
 <?php
 
 // 1. while
-while (true) { // Infinite loop: DON'T run this
-    // Do something constantly
-}
+// while (true) { // Infinite loop: DON'T run this
+//     // Do something constantly
+// }
 
 // 2. Loop with $counter
 // 2.2. Add $runLoop variable to above loop
@@ -35,7 +35,6 @@ $fruits = ["Banana", "Apple", "Orange"];
 foreach ($fruits as $i => $fruit) {
     echo $i . ' ' . $fruit . '<br>';
 }
-
 // 6. Iterate Over associative array.
 $person = [
     'name' => 'Brad',

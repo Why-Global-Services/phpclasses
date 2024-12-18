@@ -45,6 +45,7 @@ if (isset($_GET['id'])) {
         <?php foreach ($notes as $note): ?>
             <div class="note">
                 <div class="title">
+                    <p><?php echo $note['id'] ?></p>
                     <a href="?id=<?php echo $note['id'] ?>">
                         <?php echo $note['title'] ?>
                     </a>

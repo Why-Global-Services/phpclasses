@@ -7,7 +7,7 @@ echo $string . '<br>';
 echo $string2 . '<br>';
 
 // String concatenation
-echo "Hello " . " World"; // Multiple concatenation . " and PHP";
+echo "Hello " . " World"."<br/>"; // Multiple concatenation . " and PHP";
 
 // 4. String functions
 $string = "    Hello World      ";
@@ -23,7 +23,7 @@ echo "8 - " . strtolower($string) . '<br>' . PHP_EOL;
 echo "9 - " . ucfirst('hello') . '<br>' . PHP_EOL;
 echo "10 - " . lcfirst('HELLO') . '<br>' . PHP_EOL;
 echo "11 - " . ucwords('hello world') . '<br>' . PHP_EOL;
-echo "12 - " . strpos($string2, 'TheCodeholic') . '<br>' . PHP_EOL; // 5. Change into world
+echo "12 - " . strpos($string, 'World') . '<br>' . PHP_EOL; // 5. Change into world
 echo "13 - " . stripos($string, 'world') . '<br>' . PHP_EOL;
 echo "14 - " . substr($string2, 9) . '<br>' . PHP_EOL;
 echo "15 - " . str_replace('World', 'PHP', $string) . '<br>' . PHP_EOL;
@@ -47,6 +47,7 @@ echo nl2br($longText) . '<br>' . PHP_EOL;
 // 7. Multiline text and reserve html tags
 $longText = "
   Hello, my name is <b>Zura</b>
+  
   I am <b>27</b>,
   I love my daughter
 ";

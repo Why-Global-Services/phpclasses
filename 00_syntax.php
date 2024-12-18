@@ -8,11 +8,13 @@
   <title>Document</title>
 </head>
 <body>
-Hello World
+Hello World!
+echo "test";
 <!--Echo HTML tags-->
 <?php
-echo "Hello World";
-echo "Hello World";
+echo "<br/>"."test";
+echo "Hello World!!"."<br/>";
+echo "Hello World!!!!!";
 ?>
 </body>
 </html>

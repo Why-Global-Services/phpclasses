@@ -14,11 +14,11 @@ echo $a % $b . '<br>';
 
 // 4. Assignment with math operators
 
-//$a += $b; echo $a.'<br>'; // $a = 9
-//$a -= $b; echo $a.'<br>'; // $a = 1
-//$a *= $b; echo $a.'<br>'; // $a = 20
-//$a /= $b; echo $a.'<br>'; // $a = 1.25
-//$a %= $b; echo $a.'<br>'; // $a = 1
+$a += $b; echo $a.'<br>'; // $a = 9
+$a -= $b; echo $a.'<br>'; // $a = 1
+$a *= $b; echo $a.'<br>'; // $a = 20
+$a /= $b; echo $a.'<br>'; // $a = 1.25
+$a %= $b; echo $a.'<br>'; // $a = 1
 
 // 5. Increment operator
 echo $a++ . '<br>';
@@ -29,10 +29,11 @@ echo $a-- . '<br>';
 echo --$a . '<br>';
 
 // 7. Number checking functions
-is_float(1.25); // true
-is_integer(3.4); // false
-is_numeric("3.45"); // true
-is_numeric("3g.45"); // true
+echo is_float(1.25)."float <br/>"; // true
+echo is_integer(3.4)."integer <br/>"; // false
+echo is_numeric("3.45")."numeric <br/>"; // true
+echo is_numeric("3g.45")."numeric <br/>"; // false
+
 
 // 7. Conversion
 $strNumber = '12.34';
@@ -50,6 +51,7 @@ echo "round(2.4) " . round(2.4) . '<br>';
 echo "round(2.6) " . round(2.6) . '<br>';
 echo "floor(2.6) " . floor(2.6) . '<br>';
 echo "ceil(2.4) " . ceil(2.4) . '<br>';
+echo "ceil(4.0) " . ceil(4.0) . '<br>';
 
 // 10. Formatting numbers
 $number = 123456789.12345;

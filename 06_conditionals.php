@@ -55,7 +55,7 @@ $myAge = $age ?: 18; // Equivalent of "$age ? $age : 18"
 
 // 8. Null coalescing operator
 $var = isset($name) ? $name : 'John';
-$var = $name ?? 'John'; // Equivalent of above
+$var = $name ?? 'John1'; // Equivalent of above
 echo $var.'<br>';
 
 // 9. Null coalescing assignment operator. Since PHP 7.4

@@ -10,11 +10,13 @@ var_dump($fruits); // print_r
 echo '</pre>';
 
 // Get element by index
-echo $fruits[3].'<br>';
+
+print_r ($fruits)."<br/>";
+echo $fruits[2].'<br>';
 // echo($fruits).'<br>';
 
 // Set element by index
-$fruits[0] = "Peach";
+$fruits[4] = "Peach";
 
 // Check if array has element at index 2
 echo '<pre>';
@@ -46,23 +48,23 @@ array_unshift($fruits, 'Apple');
 print_r($fruits);
 // Remove element from the beginning of the array
 array_shift($fruits);
-print_r($fruits);
+print_r($fruits)."shift";
 
 // Split the string into an array
-$string = "Banana,Apple-Peach";
+$string = "Banana-Apple-Peach";
 echo '<pre>';
-var_dump(explode("-", $string));
+var_dump(explode("-", $string))."explode";
 echo '</pre>';
 
 // sort($choc);
 // var_dump($choc);
 
 // Combine array elements into string
-echo implode(",", $fruits).'<br>';
+echo implode("-", $fruits).'<br>';
 
 // Check if element exist in the array
 echo '<pre>';
-var_dump(in_array('Apple', $fruits));
+var_dump(in_array('Banana', $fruits));
 echo '</pre>';
 
 // Search element index in the array
@@ -93,12 +95,15 @@ $evens = array_filter($numbers, function($n){ // fn($n) => $n % 2 === 0
 echo '<pre>';
 var_dump($evens);
 echo '</pre>';
-
+echo $squares;
 $squares = array_map(fn($n) => $n + 1, $numbers);
+
+print_r($squares);
+
 echo '<pre>';
 var_dump($squares);
 echo '</pre>';
-
+echo 'PHP';
 $sum = array_reduce($numbers, fn($carry, $item) => $carry + $item);
 echo $sum.'<br>';
 

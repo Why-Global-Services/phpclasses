@@ -4,6 +4,7 @@
 echo time() . '<br>';
 
 // 2. Print current date
+echo "2".'<br/>';
 echo date('Y-m-d H:i:s') . '<br>';
 
 // 3. Print yesterday

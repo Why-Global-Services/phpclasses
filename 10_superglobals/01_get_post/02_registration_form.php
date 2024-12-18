@@ -15,8 +15,8 @@ $password_confirm = '';
 $cv_url = '';
 $postData = [];
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $username = post_data('username');
-    $username = post_data('username');
+    $username = $_POST['username'];
+    echo $username;
     $email = post_data('email');
     $password = post_data('password');
     $password_confirm = post_data('password_confirm');
@@ -71,8 +71,8 @@ function post_data($field)
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body style="padding: 50px;">
-
-<form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" novalidate>
+<?php echo $username;?>
+<form action="" method="post" novalidate>
     <div class="row">
         <div class="col">
             <div class="form-group">
